@@ -12,6 +12,13 @@
             position:fixed;
         }
     </style>
+    <script>
+        function myFucntion() {
+        var quiz1 = prompt("노란색이고 원숭이가 좋아하는것은? \n ㅂㄴㄴ", "");
+        if(quiz1=="바나나") document.getElementById("check").innerHTML = "정답입니다.";
+        else document.getElementById("check").innerHTML = "오답입니다.";
+        }
+    </script>
     <body>
         &emsp; &emsp; <input type="button" class="tp" value="홈" onclick="location.href='index.html'">
         &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="영어 문장" onclick="location.href='e.html'">
@@ -20,27 +27,12 @@
         &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="퀴즈" onclick="location.href='quiz.html'">
         <br><br><br><br><Br>
         <center style="font-size: 35px;">
-            초성퀴즈!
+            초성퀴즈!<br><br><Br>
         </center>
         <br><br><br><br><Br>
         <center style="font-size: 20px;">
-            1. 노란색이고 원숭이가 좋아하는 것은?<br><br>
-            ㅂㄴㄴ<br><br>
-            <input type="button" value="봐나나" onclick="alert('오답')">
-            <input type="button" value="바나나" onclick="alert('정답!')">
-            <input type="button" value="비노네" onclick="alert('오답')">
-            <br><Br><br>
-            2. 빨간색이고 우리나라 전통음식은?<br><br>
-            ㄱㅊ<br><br>
-            <input type="button" value="감치" onclick="alert('오답')">
-            <input type="button" value="길치" onclick="alert('오답')">
-            <input type="button" value="김치" onclick="alert('정답!')">
-            <br><br><br>
-            3. 세상에서 가장 높은 산은?<br><br>
-            초성X
-            <input type="button" value="에베레스트산" onclick="alert('정답!')">
-            <input type="button" value="북한산" onclick="alert('오답')">
-            <input type="button" value="마칼루산" onclick="alert('오답')">
+            <input type="button" onclick="myFucntion()" value="퀴즈 풀기"><br>I
+            <h3 id="check">퀴즈 푸는중..</h3>
         </center>
     </body>
 </html>

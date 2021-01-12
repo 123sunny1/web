@@ -13,10 +13,15 @@
         }
     </style>
     <script>
-        function myFucntion() {
+        function quiz1() {
         var quiz1 = prompt("노란색이고 원숭이가 좋아하는것은? \n ㅂㄴㄴ", "");
         if(quiz1=="바나나") document.getElementById("check").innerHTML = "정답입니다.";
         else document.getElementById("check").innerHTML = "오답입니다.";
+        }
+        function quiz2() {
+        var quiz2 = prompt("대한민국의 수도 \n ㅅㅇ", "");
+        if(quiz2=="서울") document.getElementById("check1").innerHTML = "정답입니다.";
+        else document.getElementById("check1").innerHTML = "오답입니다.";
         }
     </script>
     <body>
@@ -31,8 +36,11 @@
         </center>
         <br><br><br><br><Br>
         <center style="font-size: 25px;">
-            <input type="button" style="font-size: 25px;" onclick="myFucntion()" value="퀴즈 풀기"><br>I
-            <h3 id="check">퀴즈 푸는중..</h3>
+            <input type="button" style="font-size: 25px;" onclick="quiz1()" value="1번 퀴즈 풀기"><br>I<br>
+            <span id="check">퀴즈 푸는중..</span>
+            <br><br>
+            <input type="button" style="font-size: 25px;" onclick="quiz2()" value="2번 퀴즈 풀기"><br>I<br>
+            <span id="check1">퀴즈 푸는중..</span>
         </center>
     </body>
 </html>

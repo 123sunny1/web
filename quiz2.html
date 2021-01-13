@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            서진이의 웹사이트
+        </title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        .tp {
+            font-size: 40px;
+            position:fixed;
+        }
+        .quiz {
+            font-size: 25px;
+        }
+        .quiz1 {
+            font-size: 35px;
+        }
+    </style>
+    <script>
+        //1번 문제
+        function quiz1() {
+        var quiz1 = prompt("세상에서 가장 착한 사자는? \n 띄어쓰기 없이 입력", "");
+        if(quiz1=="자원봉사자") document.getElementById("check1").innerHTML = "정답입니다.";
+        else document.getElementById("check1").innerHTML = "오답입니다.";
+        }
+        //2번 문제
+        function quiz2() {
+        var quiz2 = prompt("세상에서 가장 예쁜 개는?", "");
+        if(quiz2=="무지개") document.getElementById("check2").innerHTML = "정답입니다.";
+        else document.getElementById("check2").innerHTML = "오답입니다.";
+        }
+    </script>
+    <body>
+        &emsp; &emsp; <input type="button" class="tp" value="홈" onclick="location.href='index.html'">
+        &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="영어 문장" onclick="location.href='e.html'">
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="그림" onclick="location.href='pictures.html'">
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="다운로드 센터" onclick="location.href='ds.html'">
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="퀴즈" onclick="location.href='quiz.html'">
+        <br><Br><Br><Br><br>
+
+        <!--제목-->
+        <center style="font-size: 43px;">
+            넌센스 퀴즈!<br><br><Br>
+        </center>
+        
+        <center>
+            <!--1번 문제-->
+            <input type="button" value="1번 퀴즈 풀기" onclick="quiz1()" class="quiz"><br>I<br>
+            <span class="quiz1" id="check1">퀴즈 푸는중..</span>
+            <br><br>
+
+            <!--2번 문제-->
+            <input type="button" value="2번 퀴즈 풀기" onclick="quiz2()" class="quiz"><br>I<br>
+            <span class="quiz1" id="check2">퀴즈 푸는중..</span>
+            <br><br>
+        </center>
+    </body>
+</html>

@@ -11,6 +11,9 @@
             font-size: 40px;
             position:fixed;
         }
+        .quiz {
+            font-size: 25px;
+        }
     </style>
     <script>
         function quiz1() {
@@ -22,6 +25,16 @@
         var quiz2 = prompt("대한민국의 수도 \n ㅅㅇ", "");
         if(quiz2=="서울") document.getElementById("check1").innerHTML = "정답입니다.";
         else document.getElementById("check1").innerHTML = "오답입니다.";
+        }
+        function quiz3() {
+        var quiz3 = prompt("예날에 사용하던, \n 놋쇠로 만들어진 \n 돈 \n ㅇㅈ", "");
+        if(quiz3=="엽전") document.getElementById("check2").innerHTML = "정답입니다.";
+        else document.getElementById("check2").innerHTML = "오답입니다.";
+        }
+        function quiz4() {
+        var quiz4 = prompt("옛날에 무거운 물건을 들어 올리는 기계 \n ㄱㅈㄱ", "");
+        if(quiz2=="거중기") document.getElementById("check3").innerHTML = "정답입니다.";
+        else document.getElementById("check3").innerHTML = "오답입니다.";
         }
     </script>
     <body>
@@ -36,11 +49,17 @@
         </center>
         <br><br><br><br><Br>
         <center style="font-size: 25px;">
-            <input type="button" style="font-size: 25px;" onclick="quiz1()" value="1번 퀴즈 풀기"><br>I<br>
+            <input type="button" class="quiz" onclick="quiz1()" value="1번 퀴즈 풀기"><br>I<br>
             <span id="check">퀴즈 푸는중..</span>
             <br><br>
-            <input type="button" style="font-size: 25px;" onclick="quiz2()" value="2번 퀴즈 풀기"><br>I<br>
+            <input type="button" class="quiz" onclick="quiz2()" value="2번 퀴즈 풀기"><br>I<br>
             <span id="check1">퀴즈 푸는중..</span>
+            <br><br>
+            <input type="button" class="quiz" onclick="quiz3()" value="3번 퀴즈 풀기"><br>I<br>
+            <span id="check2">퀴즈 푸는중..</span>
+            <br><Br>
+            <input type="button" class="quiz" onclick="quiz3()" value="4번 퀴즈 풀기"><br>I<br>
+            <span id="check3">퀴즈 푸는중..</span>
         </center>
     </body>
 </html>

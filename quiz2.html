@@ -31,6 +31,12 @@
         if(quiz2=="무지개") document.getElementById("check2").innerHTML = "정답입니다.";
         else document.getElementById("check2").innerHTML = "오답입니다.";
         }
+        //3번 문제 정답:이별
+        function quiz3() {
+        var quiz3 = prompt("별 중에 가장 슬픈 별은?", "");
+        if(quiz2=="이별") document.getElementById("check3").innerHTML = "정답입니다.";
+        else document.getElementById("check3").innerHTML = "오답입니다.";
+        }
     </script>
     <body>
         &emsp; &emsp; <input type="button" class="tp" value="홈" onclick="location.href='index.html'">
@@ -55,6 +61,11 @@
             <!--2번 문제 정답:무지개-->
             <input type="button" value="2번 퀴즈 풀기" onclick="quiz2()" class="quiz"><br>I<br>
             <span class="quiz1" id="check2">퀴즈 푸는중..</span>
+            <br><br>
+
+            <!--3번 문제 정답:이별-->
+            <input type="button" value="3번 퀴즈 풀기" onclick="quiz3()" class="quiz"><br>I<br>
+            <span class="quiz1" id="check3">퀴즈 푸는중..</span>
             <br><br>
         </center>
     </body>

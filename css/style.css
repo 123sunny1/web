@@ -1,0 +1,32 @@
+.tp {
+    font-size: 40px;
+    position:fixed;
+}
+.button {
+    padding: 5px;
+    width: 600px;
+    height: 250px;
+    background-color: #fa8;
+    border: 1px solid #000;
+    position:fixed;
+}
+.탈무드 {
+    font-size: 35px;
+    border: 10px solid skyblue;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: auto;
+}
+.en {
+    border: 9px solid red;
+    width: 500px;
+}
+.vido {
+    border: 12px solid blue;
+    width: 853px;
+    height: 480px;
+}
+.text {
+    color: skyblue;
+}

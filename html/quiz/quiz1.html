@@ -6,54 +6,27 @@
         </title>
         <meta charset="utf-8">
     </head>
-    <style>
-        .tp {
-            font-size: 40px;
-            position:fixed;
-        }
-        .quiz {
-            font-size: 40px;
-        }
-        .quiz1 {
-            font-size: 35px;
-        }
-    </style>
-    <script>
-        //1번 문제 정답:바나나
-        function quiz1() {
-        var quiz1 = prompt("노란색이고 원숭이가 좋아하는것은? \n ㅂㄴㄴ", "");
-        if(quiz1=="바나나") document.getElementById("check").innerHTML = "정답입니다.";
-        else document.getElementById("check").innerHTML = "오답입니다.";
-        }
-        //2번 문제 정답:서울
-        function quiz2() {
-        var quiz2 = prompt("대한민국의 수도 \n ㅅㅇ", "");
-        if(quiz2=="서울") document.getElementById("check1").innerHTML = "정답입니다.";
-        else document.getElementById("check1").innerHTML = "오답입니다.";
-        }
-        //3번 문제 정답:엽전
-        function quiz3() {
-        var quiz3 = prompt("옛날에 사용하던, \n 놋쇠로 만들어진 \n 돈 \n ㅇㅈ", "");
-        if(quiz3=="엽전") document.getElementById("check2").innerHTML = "정답입니다.";
-        else document.getElementById("check2").innerHTML = "오답입니다.";
-        }
-        //4번 문제 정답:거중기
-        function quiz4() {
-        var quiz4 = prompt("옛날에 무거운 물건을 들어 올리는 기계 \n ㄱㅈㄱ", "");
-        if(quiz4=="거중기") document.getElementById("check3").innerHTML = "정답입니다.";
-        else document.getElementById("check3").innerHTML = "오답입니다.";
-        }
-    </script>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!--Java-Script-Link-->
+    <script src="../../java-script/quiz.js"></script>
+
     <body>
-        &emsp; &emsp; <input type="button" class="tp" value="홈" onclick="location.href='../index.html'">
-        &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="동영상/노래" onclick="location.href='../vido.html'">
-        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="영어 문장" onclick="location.href='../e.html'">
-        <br><Br><Br><br>
-        &emsp; &emsp;<input type="button" class="tp" value="그림" onclick="location.href='../pictures.html'">
-        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="다운로드 센터" onclick="location.href='../ds.html'">
-        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="퀴즈" onclick="location.href='../quiz.html'">
-        <br><Br><Br><Br>
-        &emsp; &emsp;<input type="button" class="tp" value="탈무드 이야기" onclick="location.href='탈무드.html'">
+        <div class="button">
+            &emsp; &emsp; <input type="button" class="tp" value="홈" onclick="location.href='../index.html'">
+            &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="동영상/노래" onclick="location.href='../vido.html'">
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="영어 문장" onclick="location.href='../e.html'">
+            <br><Br><Br><br>
+            &emsp; &emsp;<input type="button" class="tp" value="그림" onclick="location.href='../pictures.html'">
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="다운로드 센터" onclick="location.href='../ds.html'">
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<input type="button" class="tp" value="퀴즈" onclick="location.href='../quiz.html'">
+            <br><Br><Br><Br>
+            &emsp; &emsp;<input type="button" class="tp" value="탈무드 이야기" onclick="location.href='탈무드.html'">
+        </div>
+        <br><Br><Br><Br><br><Br><Br><Br>
+
         <center style="font-size: 43px;">
             초성퀴즈!<br><br><Br>
         </center>
@@ -61,20 +34,21 @@
         <br><br><br>
         <center>
             <!--1번 문제-->
-            <input type="button" class="quiz" onclick="quiz1()" value="1번 퀴즈 풀기"><br>I<br>
-            <span class="quiz1" id="check">퀴즈 푸는중..</span>
+            <input type="button" class="quiz" onclick="quiz1a1()" value="1번 퀴즈 풀기"><br>I<br>
+            <span class="quiz1" id="check1a1">퀴즈 푸는중..</span>
             <br><br>
             <!--2번 문제-->
-            <input type="button" class="quiz" onclick="quiz2()" value="2번 퀴즈 풀기"><br>I<br>
-            <span class="quiz1" id="check1">퀴즈 푸는중..</span>
+            <input type="button" class="quiz" onclick="quiz1a2()" value="2번 퀴즈 풀기"><br>I<br>
+            <span class="quiz1" id="check1a2">퀴즈 푸는중..</span>
             <br><br>
             <!--3번 문제-->
-            <input type="button" class="quiz" onclick="quiz3()" value="3번 퀴즈 풀기"><br>I<br>
-            <span class="quiz1" id="check2">퀴즈 푸는중..</span>
+            <input type="button" class="quiz" onclick="quiz1a3()" value="3번 퀴즈 풀기"><br>I<br>
+            <span class="quiz1" id="check1a3">퀴즈 푸는중..</span>
             <br><Br>
             <!--4번 문제-->
-            <input type="button" class="quiz" onclick="quiz4()" value="4번 퀴즈 풀기"><br>I<br>
-            <span class="quiz1" id="check3">퀴즈 푸는중..</span>
+            <input type="button" class="quiz" onclick="quiz1a4()" value="4번 퀴즈 풀기"><br>I<br>
+            <span class="quiz1" id="check1a4">퀴즈 푸는중..</span>
+            <br><Br>
         </center>
     </body>
 </html>

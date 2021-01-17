@@ -20,7 +20,8 @@
 }
 .en {
     border: 9px solid red;
-    width: 500px;
+    width: 70%;
+    font-size: 250%;
 }
 .vido {
     border: 12px solid blue;
@@ -29,4 +30,13 @@
 }
 .text {
     color: skyblue;
+}
+.quiz {
+    font-size: 40px;
+}
+.quiz1 {
+    font-size: 35px;
+}
+.t-tp {
+    font-size: 45px;
 }

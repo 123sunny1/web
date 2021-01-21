@@ -38,8 +38,8 @@ function quiz2a1() {
     else document.getElementById("check2a2").innerHTML = "오답입니다.";
     }
     //3번 문제 정답:이별
-    function quiz3() {
+    function quiz2a3() {
     var quiz2a3 = prompt("별 중에 가장 슬픈 별은?", "");
     if(quiz2a3=="이별") document.getElementById("check2a3").innerHTML = "정답입니다.";
     else document.getElementById("check2a3").innerHTML = "오답입니다.";
-}
+    }

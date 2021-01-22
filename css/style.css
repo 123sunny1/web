@@ -19,13 +19,15 @@
 }
 .en {
     border: 9px solid red;
-    width: 70%;
+    width: 35%;
     font-size: 250%;
+    margin-left: 280px;
 }
 .vido {
     border: 12px solid blue;
     width: 853px;
     height: 480px;
+    margin-left: 280px;
 }
 .text {
     color: skyblue;
@@ -37,5 +39,8 @@
     font-size: 35px;
 }
 .t-tp {
-    font-size: 45px;
+    font-size: 35px;
+}
+.pictures {
+    margin-left: 280px;
 }

@@ -12,8 +12,8 @@
 }
 .button {
     padding: 5px;
-    width: 265px;
-    height: 400px;
+    width: 205px;
+    height: 350px;
     background-color: #fa8;
     border: 1px solid #000;
     position: fixed;
@@ -22,7 +22,7 @@
     font-size: 35px;
     border: 10px solid skyblue;
     padding: 0;
-    margin-left: 280px;
+    margin-left: 215px;
     display: block;
     width: auto;
 }
@@ -32,21 +32,12 @@
     display: block;
     padding: 0;
     font-size: 250%;
-    margin-left: 280px;
+    margin-left: 215px;
 }
 .en-title {
     padding: 0;
-    margin-left: 280px;
+    margin-left: 215px;
     font-size: 350%;
-}
-.vido {
-    border: 12px solid blue;
-    width: 853px;
-    height: 480px;
-    margin-left: 280px;
-}
-.text {
-    color: skyblue;
 }
 .quiz {
     font-size: 40px;

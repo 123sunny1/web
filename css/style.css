@@ -1,9 +1,6 @@
 .tp {
     font-size: 30px;
 }
-.logo {
-    text-align: right;
-}
 .home-title {
     font-size: 45px;
 }
@@ -30,10 +27,17 @@
     width: auto;
 }
 .en {
-    border: 9px solid red;
-    width: 35%;
+    border: 10px solid red;
+    width: auto;
+    display: block;
+    padding: 0;
     font-size: 250%;
     margin-left: 280px;
+}
+.en-title {
+    padding: 0;
+    margin-left: 280px;
+    font-size: 350%;
 }
 .vido {
     border: 12px solid blue;
